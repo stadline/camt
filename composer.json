@@ -3,22 +3,14 @@
     "description": "Library to read CAMT files (XML containing bank statements).",
     "license": "MIT",
     "require": {
-        "php": "^7.0",
+        "php": ">=8.3",
+        "ext-bcmath": "*",
         "globalcitizen/php-iban": "^2.6",
-        "moneyphp/money": "^3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~6",
-        "friendsofphp/php-cs-fixer": "^2.14"
+        "moneyphp/money": "^4.5"
     },
     "autoload": {
         "psr-4": {
             "Genkgo\\Camt\\": ["src"]
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Genkgo\\TestCamt\\": ["test"]
         }
     }
 }
